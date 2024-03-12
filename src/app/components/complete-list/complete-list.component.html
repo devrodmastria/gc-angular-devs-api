@@ -1,0 +1,20 @@
+<h3 style="margin-top: 10px; text-align: center;">&#9813; Hall of Fame &#9812;</h3>
+<hr>
+<table>
+    <tr>
+        <th>Name</th>   
+        <th>Invention</th>
+        <th>Year</th>
+    </tr>
+
+    @for (dev of hallOfFame.complete; track $index) {
+        <tr>
+            <td>{{dev.firstName}} {{dev.lastName}}</td>
+            <td>{{dev.innovation}}</td>
+            <td>{{dev.year}}</td>
+        </tr>
+    }
+</table>
+
+<!-- // Display details of the hall-of-famers in an HTML table with 4 columns: 
+// First Name, Last Name, Innovation, Year. -->
